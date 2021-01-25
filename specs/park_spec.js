@@ -102,7 +102,7 @@ describe("Park", function () {
     assert.strictEqual(actual, 83585);
   });
 
-  xit("should be able to calculate total revenue for one year", function () {
+  it("should be able to calculate total revenue for one year", function () {
     park.add(trex1);
     park.add(trex2);
     park.add(trex3);
@@ -118,7 +118,7 @@ describe("Park", function () {
   //EXTENSIONS//
   //////////////
 
-  xit("should be able to remove all dinosaurs of a particular species", function () {
+  it("should be able to remove all dinosaurs of a particular species", function () {
     park.add(trex1);
     park.add(velociraptor1);
     park.add(velociraptor2);
@@ -130,7 +130,7 @@ describe("Park", function () {
     assert.deepStrictEqual(actual, expected);
   });
 
-  xit("should be able to calculate number of dinosaurs for each diet type", function () {
+  it("should be able to calculate number of dinosaurs for each diet type", function () {
     park.add(trex1);
     park.add(trex2);
     park.add(trex3);
