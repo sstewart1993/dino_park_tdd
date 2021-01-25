@@ -47,7 +47,7 @@ describe("Park", function () {
     assert.deepStrictEqual(actual, [trex1]);
   });
 
-  xit("should be able to remove a dinosaur from its collection", function () {
+  it("should be able to remove a dinosaur from its collection", function () {
     park.add(trex1);
     park.add(velociraptor1);
     park.remove(velociraptor1);
@@ -56,7 +56,7 @@ describe("Park", function () {
   });
 
 
-  xit("should be able to find the dinosaur that attracts the most visitors", function () {
+  it("should be able to find the dinosaur that attracts the most visitors", function () {
     park.add(trex1);
     park.add(trex2);
     park.add(trex3);
@@ -67,7 +67,7 @@ describe("Park", function () {
     assert.deepStrictEqual(actual, trex3);
   });
 
-  xit("should be able to find all dinosaurs of a particular species", function () {
+  it("should be able to find all dinosaurs of a particular species", function () {
     park.add(trex1);
     park.add(velociraptor1);
     park.add(velociraptor2);
@@ -78,7 +78,7 @@ describe("Park", function () {
     assert.deepStrictEqual(actual, expected);
   });
 
-  xit("should be able to calculate the total number of visitors per day", function () {
+  it("should be able to calculate the total number of visitors per day", function () {
     park.add(trex1);
     park.add(trex2);
     park.add(trex3);
@@ -90,7 +90,7 @@ describe("Park", function () {
     assert.strictEqual(actual, 229);
   });
 
-  xit("should be able to calculate the total number of visitors per year", function () {
+  it("should be able to calculate the total number of visitors per year", function () {
     park.add(trex1);
     park.add(trex2);
     park.add(trex3);
