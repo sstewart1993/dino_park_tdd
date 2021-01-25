@@ -1,7 +1,11 @@
-const Park = function(name, price, dinosaurs){
+const Park = function(name, ticketPrice){
     this.name = name;
-    this.price = price;
-    this.dinosaurs = dinosaurs;
+    this.ticketPrice = ticketPrice;
+    this.dinosaurs = [];
 }
 
-module.exports
+Park.prototype.add = function(dinosaur){
+    this.dinosaurs.push(dinosaur);
+}
+
+module.exports = Park;

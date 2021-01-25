@@ -26,22 +26,22 @@ describe("Park", function () {
     park = new Park("Jurassic Park", 20);
   });
 
-  xit("should have a name", function () {
+  it("should have a name", function () {
     const actual = park.name;
     assert.strictEqual(actual, "Jurassic Park");
   });
 
-  xit("should have a ticket price", function () {
+  it("should have a ticket price", function () {
     const actual = park.ticketPrice;
     assert.strictEqual(actual, 20);
   });
 
-  xit("should have a collection of dinosaurs", function () {
+  it("should have a collection of dinosaurs", function () {
     const actual = park.dinosaurs;
     assert.deepStrictEqual(actual, []);
   });
 
-  xit("should be able to add a dinosaur to its collection", function () {
+  it("should be able to add a dinosaur to its collection", function () {
     park.add(trex1);
     const actual = park.dinosaurs;
     assert.deepStrictEqual(actual, [trex1]);
